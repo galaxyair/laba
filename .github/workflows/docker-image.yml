@@ -24,4 +24,4 @@ jobs:
 
 
     - name: Push Docker image
-      run: docker push web:latest
+      run: docker push money7777777/web:latest
