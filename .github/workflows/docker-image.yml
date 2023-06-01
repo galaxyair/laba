@@ -15,6 +15,7 @@ jobs:
 
     - name: Set up Docker
       uses: docker/setup-buildx-action@v1
+      run: docker login -u “money7777777” -p “123asd123” docker.io
 
     - name: Build Docker image
       run: docker build -t web .
