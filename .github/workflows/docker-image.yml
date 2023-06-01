@@ -20,11 +20,7 @@ jobs:
       run: docker build -t web .
 
     - name: Log in to Docker Hub
-      uses: actions/checkout@v1
       run: echo ${{ secrets.DOCKERHUB_USERNAME }} | ${{ secrets.DOCKERHUB_TOKEN }}
-      with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Push Docker image
       run: docker push web:latest
