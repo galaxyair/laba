@@ -21,7 +21,7 @@ jobs:
       run: docker build -t web .
 
     - name: Log in to Docker Hub
-      run: docker login -u “money7777777” -p “dckr_pat_kVbrDAQcMDsV2aVdtYa6F4jmVC8” docker.io
+      run: docker login -u money7777777 -p dckr_pat_kVbrDAQcMDsV2aVdtYa6F4jmVC8 docker.io
 
     - name: Push Docker image
       run: docker push web:latest
