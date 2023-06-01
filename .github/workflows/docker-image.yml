@@ -26,5 +26,4 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Push Docker image
-      run: docker login -u 'money7777777@ukr.net' -p 'dckr_pat_kVbrDAQcMDsV2aVdtYa6F4jmVC8'
-      run: docker push web:latest
+      run:  docker login -u 'money7777777@ukr.net' -p 'dckr_pat_kVbrDAQcMDsV2aVdtYa6F4jmVC8' && docker push web:latest
